@@ -17,6 +17,7 @@ public class Youtube {
         -arama kutusu linke tıklayın
         -'güldür güldür son bölüm' aratın
         -işlem aralarına 2 saniye bekleme ekleyin
+        -sayfayı kapatın
          */
 
         WebDriverManager.chromedriver().setup();
@@ -30,6 +31,7 @@ public class Youtube {
                 findElement(By.xpath("//input[@class='ytd-searchbox']"));
         Thread.sleep(2000);
          searchbox.sendKeys("güldür güldür son bölüm", Keys.ENTER);
+         driver.close();
 
 
 

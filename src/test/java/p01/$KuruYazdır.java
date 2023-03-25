@@ -21,6 +21,7 @@ public class $KuruYazdır {
         -euro kurunu gösteren linke gidin
         -euro kurunu alın
         -euro - dolar farkını konsola yazdırın
+        -sayfayı kapatın
          */
 
 
@@ -52,6 +53,7 @@ public class $KuruYazdır {
         System.out.println("Bugünkü dolar kuru : "+dolar);
         System.out.println("Bugünkü euro  kuru : "+euro);
         System.out.println("Bugünkü euro - dolar kur farkı : "+fark+" TL dir.");
+        driver.close();
 
 
     }

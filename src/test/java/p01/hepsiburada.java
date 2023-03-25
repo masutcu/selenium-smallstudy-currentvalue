@@ -16,6 +16,7 @@ public class hepsiburada {
         -hepsiburada sitesine gidin
         -arama kutusu linke tıklayın
         -iphone aratın
+        -sayfayı kapatın
          */
 
         WebDriverManager.chromedriver().setup();
@@ -28,6 +29,7 @@ public class hepsiburada {
         WebElement aramakutusu=driver.
                 findElement(By.xpath("//input[@class='theme-IYtZzqYPto8PhOx3ku3c']"));
         aramakutusu.sendKeys("iphone"+ Keys.ENTER);
+        driver.close();
 
 
     }
